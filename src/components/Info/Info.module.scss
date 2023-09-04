@@ -1,0 +1,19 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0;
+  font-size: 18px;
+
+  button {
+    font-size: 18px;
+  }
+}
+
+.button {
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
