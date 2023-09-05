@@ -20,7 +20,7 @@ export const Info: React.FC<IProps> = ({
 }) => {
   return (
     <div className={styles.info}>
-      <div>{haveTodos && <>{itemsLeft} items left</>}</div>
+      <div className={styles.items}>{haveTodos && <>{itemsLeft} items left</>}</div>
       <ButtonsGroup currentFilter={currentFilter} setFilter={setFilter} />
       <div>
         <button className={styles.button} onClick={clearCompleted}>Clear completed</button>

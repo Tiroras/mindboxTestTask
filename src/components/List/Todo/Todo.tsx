@@ -14,7 +14,7 @@ export const Todo: React.FC<IProps> = memo(({ id, status, value, checkTodo }) =>
   const isChecked = status === 'completed'
   const handleCheck = () => { checkTodo(id) }
   return (
-    <div className={cn(styles.todo, isChecked && styles.checked)}>
+    <div data-testid='todo' className={cn(styles.todo, isChecked && styles.checked)}>
       <input
         className={styles.checkbox}
         id={String(id)}
